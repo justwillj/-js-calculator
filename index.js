@@ -35,3 +35,5 @@ const divideValues = (event) => {
   }
 };
 document.querySelector("#divide").addEventListener("click", divideValues);
+
+const multiplyValues = (event) => {};
