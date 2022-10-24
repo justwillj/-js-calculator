@@ -37,6 +37,9 @@ const divideValues = (event) => {
 document.querySelector("#divide").addEventListener("click", divideValues);
 
 const multiplyValues = (event) => {
+  let total = 0;
   const value1 = document.querySelector("#Value1").value;
   const value2 = document.querySelector("#Value2").value;
+
+  total = value1 * value2;
 };
