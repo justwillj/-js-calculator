@@ -10,4 +10,7 @@ const addValues = (event) => {
 };
 document.querySelector("#add").addEventListener("click", addValues);
 
-const subtractValues = (event) => {};
+const subtractValues = (event) => {
+  const value1 = document.querySelector("#Value1").value;
+  const value2 = document.querySelector("#Value2").value;
+};
