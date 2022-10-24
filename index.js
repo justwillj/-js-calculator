@@ -74,3 +74,17 @@ const poweroFValues = (event) => {
   }
 };
 document.querySelector("#power").addEventListener("click", poweroFValues);
+
+const sqaureRootoFValues = (event) => {
+  let total = 0;
+  const value1 = document.querySelector("#Value1").value;
+  const answer = document.querySelector("#answer");
+  if (value1 === "") {
+    answer.setAttribute("value", "Error: Please enter a number!");
+  } else {
+    total = Math.sqrt(value1);
+    //https://www.w3schools.com/jsref/dom_obj_text.asp
+    answer.setAttribute("value", total);
+  }
+};
+document.querySelector("#square").addEventListener("click", sqaureRootoFValues);
