@@ -1,3 +1,8 @@
+/**
+ * gets the 2 values from the inputs and adds them together
+ * @param {click} event - when the user clicks on the operation, calls the function
+ * @returns {number} - returns the 2 numbers added up
+ */
 const addValues = (event) => {
   let total = 0;
   const value1 = document.querySelector("#Value1").value;
@@ -10,7 +15,11 @@ const addValues = (event) => {
     //https://www.w3schools.com/jsref/dom_obj_text.asp
     answer.setAttribute("value", total);
   }
-
+  /**
+   * stores the last answer so the user can recall it
+   * @param {click} event - when the user clicks on the button, runs the function
+   * @returns {number} - returns the last answer the calculator made
+   */
   const memoryOfValues = (event) => {
     const memoryInput = document.querySelector("#memory-input");
     memoryInput.setAttribute("value", total);
@@ -19,6 +28,11 @@ const addValues = (event) => {
 };
 document.querySelector("#add").addEventListener("click", addValues);
 
+/**
+ * gets the 2 values from the inputs and subtracts them
+ * @param {click} event - when the user clicks on the operation, calls the function
+ * @returns {number} - returns the total = value1 - value2
+ */
 const subtractValues = (event) => {
   let total = 0;
   const value1 = document.querySelector("#Value1").value;
@@ -31,6 +45,11 @@ const subtractValues = (event) => {
     answer.setAttribute("value", total);
   }
 
+  /**
+   * stores the last answer so the user can recall it
+   * @param {click} event - when the user clicks on the button, runs the function
+   * @returns {number} - returns the last answer the calculator made
+   */
   const memoryOfValues = (event) => {
     const memoryInput = document.querySelector("#memory-input");
     memoryInput.setAttribute("value", total);
@@ -39,6 +58,11 @@ const subtractValues = (event) => {
 };
 document.querySelector("#subtract").addEventListener("click", subtractValues);
 
+/**
+ * gets the 2 values from the inputs and divides them
+ * @param {click} event - when the user clicks on the operation, calls the function
+ * @returns {number} - returns the 2 numbers after they have been divided
+ */
 const divideValues = (event) => {
   let total = 0;
   const value1 = document.querySelector("#Value1").value;
@@ -55,6 +79,11 @@ const divideValues = (event) => {
     }
   }
 
+  /**
+   * stores the last answer so the user can recall it
+   * @param {click} event - when the user clicks on the button, runs the function
+   * @returns {number} - returns the last answer the calculator made
+   */
   const memoryOfValues = (event) => {
     const memoryInput = document.querySelector("#memory-input");
     memoryInput.setAttribute("value", total);
@@ -63,6 +92,11 @@ const divideValues = (event) => {
 };
 document.querySelector("#divide").addEventListener("click", divideValues);
 
+/**
+ * gets the 2 values from the inputs and multiply them together
+ * @param {click} event - when the user clicks on the operation, calls the function
+ * @returns {number} - returns the 2 numbers after they have been multiplied
+ */
 const multiplyValues = (event) => {
   let total = 0;
   const value1 = document.querySelector("#Value1").value;
@@ -76,6 +110,11 @@ const multiplyValues = (event) => {
     answer.setAttribute("value", total);
   }
 
+  /**
+   * stores the last answer so the user can recall it
+   * @param {click} event - when the user clicks on the button, runs the function
+   * @returns {number} - returns the last answer the calculator made
+   */
   const memoryOfValues = (event) => {
     const memoryInput = document.querySelector("#memory-input");
     memoryInput.setAttribute("value", total);
@@ -84,6 +123,11 @@ const multiplyValues = (event) => {
 };
 document.querySelector("#multiply").addEventListener("click", multiplyValues);
 
+/**
+ * get the power of a value based off the inputs
+ * @param {click} event - when the user clicks on the operation, calls the function
+ * @returns {number} - returns the power of value1 with value2 being what the power is
+ */
 const poweroFValues = (event) => {
   let total = 0;
   const value1 = document.querySelector("#Value1").value;
@@ -97,6 +141,11 @@ const poweroFValues = (event) => {
     answer.setAttribute("value", total);
   }
 
+  /**
+   * stores the last answer so the user can recall it
+   * @param {click} event - when the user clicks on the button, runs the function
+   * @returns {number} - returns the last answer the calculator made
+   */
   const memoryOfValues = (event) => {
     const memoryInput = document.querySelector("#memory-input");
     memoryInput.setAttribute("value", total);
@@ -105,7 +154,12 @@ const poweroFValues = (event) => {
 };
 document.querySelector("#power").addEventListener("click", poweroFValues);
 
-const sqaureRootoFValues = (event) => {
+/**
+ * gets the square root of value1
+ * @param {click} event - when the user clicks on the operation, calls the function
+ * @returns {number} - returns the square root of value1
+ */
+const squareRootoFValues = (event) => {
   let total = 0;
   const value1 = document.querySelector("#Value1").value;
   const answer = document.querySelector("#answer");
@@ -117,10 +171,15 @@ const sqaureRootoFValues = (event) => {
     answer.setAttribute("value", total);
   }
 
+  /**
+   * stores the last answer so the user can recall it
+   * @param {click} event - when the user clicks on the button, runs the function
+   * @returns {number} - returns the last answer the calculator made
+   */
   const memoryOfValues = (event) => {
     const memoryInput = document.querySelector("#memory-input");
     memoryInput.setAttribute("value", total);
   };
   document.querySelector("#memory").addEventListener("click", memoryOfValues);
 };
-document.querySelector("#square").addEventListener("click", sqaureRootoFValues);
+document.querySelector("#square").addEventListener("click", squareRootoFValues);
