@@ -34,3 +34,4 @@ const divideValues = (event) => {
     answer.setAttribute("value", total);
   }
 };
+document.querySelector("#divide").addEventListener("click", divideValues);
