@@ -22,4 +22,7 @@ const subtractValues = (event) => {
 };
 document.querySelector("#subtract").addEventListener("click", subtractValues);
 
-const divideValues = (event) => {};
+const divideValues = (event) => {
+  const value1 = document.querySelector("#Value1").value;
+  const value2 = document.querySelector("#Value2").value;
+};
