@@ -9,3 +9,5 @@ const addValues = (event) => {
   answer.setAttribute("value", total);
 };
 document.querySelector("#add").addEventListener("click", addValues);
+
+const subtractValues = (event) => {};
