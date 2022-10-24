@@ -21,3 +21,5 @@ const subtractValues = (event) => {
   answer.setAttribute("value", total);
 };
 document.querySelector("#subtract").addEventListener("click", subtractValues);
+
+const divideValues = (event) => {};
