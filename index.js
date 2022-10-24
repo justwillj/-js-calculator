@@ -10,6 +10,12 @@ const addValues = (event) => {
     //https://www.w3schools.com/jsref/dom_obj_text.asp
     answer.setAttribute("value", total);
   }
+
+  const memoryOfValues = (event) => {
+    const memoryInput = document.querySelector("#memory-input");
+    memoryInput.setAttribute("value", total);
+  };
+  document.querySelector("#memory").addEventListener("click", memoryOfValues);
 };
 document.querySelector("#add").addEventListener("click", addValues);
 
@@ -24,6 +30,12 @@ const subtractValues = (event) => {
     //https://www.w3schools.com/jsref/dom_obj_text.asp
     answer.setAttribute("value", total);
   }
+
+  const memoryOfValues = (event) => {
+    const memoryInput = document.querySelector("#memory-input");
+    memoryInput.setAttribute("value", total);
+  };
+  document.querySelector("#memory").addEventListener("click", memoryOfValues);
 };
 document.querySelector("#subtract").addEventListener("click", subtractValues);
 
@@ -42,6 +54,12 @@ const divideValues = (event) => {
       answer.setAttribute("value", total);
     }
   }
+
+  const memoryOfValues = (event) => {
+    const memoryInput = document.querySelector("#memory-input");
+    memoryInput.setAttribute("value", total);
+  };
+  document.querySelector("#memory").addEventListener("click", memoryOfValues);
 };
 document.querySelector("#divide").addEventListener("click", divideValues);
 
@@ -57,6 +75,12 @@ const multiplyValues = (event) => {
     //https://www.w3schools.com/jsref/dom_obj_text.asp
     answer.setAttribute("value", total);
   }
+
+  const memoryOfValues = (event) => {
+    const memoryInput = document.querySelector("#memory-input");
+    memoryInput.setAttribute("value", total);
+  };
+  document.querySelector("#memory").addEventListener("click", memoryOfValues);
 };
 document.querySelector("#multiply").addEventListener("click", multiplyValues);
 
@@ -72,6 +96,12 @@ const poweroFValues = (event) => {
     //https://www.w3schools.com/jsref/dom_obj_text.asp
     answer.setAttribute("value", total);
   }
+
+  const memoryOfValues = (event) => {
+    const memoryInput = document.querySelector("#memory-input");
+    memoryInput.setAttribute("value", total);
+  };
+  document.querySelector("#memory").addEventListener("click", memoryOfValues);
 };
 document.querySelector("#power").addEventListener("click", poweroFValues);
 
@@ -86,5 +116,11 @@ const sqaureRootoFValues = (event) => {
     //https://www.w3schools.com/jsref/dom_obj_text.asp
     answer.setAttribute("value", total);
   }
+
+  const memoryOfValues = (event) => {
+    const memoryInput = document.querySelector("#memory-input");
+    memoryInput.setAttribute("value", total);
+  };
+  document.querySelector("#memory").addEventListener("click", memoryOfValues);
 };
 document.querySelector("#square").addEventListener("click", sqaureRootoFValues);
