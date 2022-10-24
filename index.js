@@ -8,3 +8,4 @@ const addValues = (event) => {
   //https://www.w3schools.com/jsref/dom_obj_text.asp
   answer.setAttribute("value", total);
 };
+document.querySelector("#add").addEventListener("click", addValues);
